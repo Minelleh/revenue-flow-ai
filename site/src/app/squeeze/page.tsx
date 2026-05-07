@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Reveal } from "@/components/reveal";
-import { HeroSceneOrPoster } from "@/components/hero-scene-wrapper";
 
 export default function Squeeze() {
   const [email, setEmail] = useState("");
@@ -90,17 +89,6 @@ export default function Squeeze() {
             </form>
           </div>
           
-          {/* Visual Proof / Hero Scene contained below form */}
-          <div 
-            className="w-full relative mx-auto overflow-hidden border border-zinc-100 shadow-xl"
-            style={{
-              aspectRatio: "16 / 9",
-              animation: "hero-rise 900ms cubic-bezier(0.22, 1, 0.36, 1) 640ms both",
-            }}
-          >
-            <HeroSceneOrPoster />
-            <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-black/40 to-transparent pointer-events-none z-10" />
-          </div>
         </div>
       </section>
 
