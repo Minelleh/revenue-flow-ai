@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { HeroSceneOrPoster } from "@/components/hero-scene-wrapper";
 import { Reveal } from "@/components/reveal";
 
 export default function Home() {
@@ -39,13 +38,6 @@ export default function Home() {
               Book Your Free Acquisition Audit
             </Link>
           </div>
-        </div>
-      </section>
-
-      {/* 3D Scene */}
-      <section className="relative w-full mb-24 md:mb-32">
-        <div className="relative w-full max-w-[1920px] mx-auto" style={{ aspectRatio: "16 / 9" }}>
-          <HeroSceneOrPoster />
         </div>
       </section>
 
@@ -102,7 +94,7 @@ export default function Home() {
       </section>
 
       {/* The Offer */}
-      <section className="px-6 py-24 md:py-32 w-full bg-zinc-950 text-ivory">
+      <section className="px-6 py-24 md:py-32 w-full bg-ivory text-zinc-900 border-t border-zinc-200">
         <div className="mx-auto max-w-5xl">
           <Reveal>
             <p className="text-accent uppercase tracking-widest text-sm font-bold mb-6 text-center">
@@ -112,33 +104,33 @@ export default function Home() {
               $500 to install.<br />
               <span className="italic text-accent">$1,000/month to run.</span>
             </h2>
-            <p className="text-zinc-400 text-lg md:text-xl text-center max-w-2xl mx-auto mb-16">
+            <p className="text-zinc-600 text-lg md:text-xl text-center max-w-2xl mx-auto mb-16">
               One system. Predictable pipeline. Qualified calls on your calendar starting week one. Total to start: $1,500.
             </p>
           </Reveal>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
             <Reveal delay={120}>
-              <div className="border border-accent p-8 md:p-10 h-full flex flex-col">
+              <div className="border border-accent p-8 md:p-10 h-full flex flex-col bg-white">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-2 h-2 rounded-full bg-accent" />
                   <span className="text-accent text-sm uppercase tracking-wider font-semibold">Within 7 days</span>
                 </div>
                 <h3 className="text-2xl md:text-3xl font-display italic mb-4">Full system installation</h3>
-                <p className="text-zinc-400 leading-relaxed">
+                <p className="text-zinc-600 leading-relaxed">
                   Your current pipeline audited. Outreach sequences built. Lead qualification configured. Appointment booking wired. Follow-up automated. You are live in one week.
                 </p>
               </div>
             </Reveal>
 
             <Reveal delay={240}>
-              <div className="border border-zinc-800 p-8 md:p-10 h-full flex flex-col">
+              <div className="border border-zinc-200 p-8 md:p-10 h-full flex flex-col bg-white">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-2 h-2 rounded-full bg-zinc-600" />
-                  <span className="text-zinc-400 text-sm uppercase tracking-wider font-semibold">Every month</span>
+                  <div className="w-2 h-2 rounded-full bg-zinc-400" />
+                  <span className="text-zinc-500 text-sm uppercase tracking-wider font-semibold">Every month</span>
                 </div>
                 <h3 className="text-2xl md:text-3xl font-display italic mb-4">Ongoing optimization + support</h3>
-                <p className="text-zinc-400 leading-relaxed">
+                <p className="text-zinc-600 leading-relaxed">
                   Performance monitored. Targeting adjusted. Sequences updated. Your calendar keeps filling. Monthly reporting. Direct access.
                 </p>
               </div>
@@ -146,7 +138,7 @@ export default function Home() {
           </div>
 
           <Reveal delay={360}>
-            <div className="border-t border-zinc-900 pt-16 grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+            <div className="border-t border-zinc-200 pt-16 grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
               <div>
                 <h3 className="text-xl md:text-2xl font-display mb-6">Also included:</h3>
                 <ul className="space-y-4">
@@ -158,7 +150,7 @@ export default function Home() {
                     "Monthly performance report with real numbers",
                     "Dedicated Slack channel for support"
                   ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-4 text-zinc-300">
+                    <li key={i} className="flex items-start gap-4 text-zinc-700">
                       <span className="text-accent mt-1">&rarr;</span>
                       <span>{item}</span>
                     </li>
@@ -166,12 +158,12 @@ export default function Home() {
                 </ul>
               </div>
               
-              <div className="bg-zinc-900 p-8 border-l-4 border-accent">
+              <div className="bg-zinc-100 p-8 border-l-4 border-accent">
                 <p className="text-accent uppercase tracking-widest text-xs font-bold mb-4">
                   The 90-Day Guarantee
                 </p>
                 <h3 className="text-2xl font-display italic mb-4">Qualified appointments in 90 days.</h3>
-                <p className="text-zinc-400 text-sm leading-relaxed mb-0">
+                <p className="text-zinc-600 text-sm leading-relaxed mb-0">
                   Your outreach system live. Your follow-up automated. Qualified calls landing on your calendar. If any of those three is not happening in 90 days, I keep working until all three are. No fine print.
                 </p>
               </div>
